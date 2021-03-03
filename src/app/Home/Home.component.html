@@ -1,0 +1,28 @@
+<table *ngIf="rw.id">
+  <tbody>
+    <tr>
+      <th>id</th>
+      <td>{{rw.id}}</td>
+    </tr>
+    <tr>
+      <th>ad</th>
+      <td>{{rw.ad}}</td>
+    </tr>
+    <tr>
+      <th>soyad</th>
+      <td>{{rw.soyad}}</td>
+    </tr>
+    <tr>
+      <th>aktif</th>
+      <td>{{rw.aktif}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Home works!
+</p>
+
+
+<app-kd-grid [getList]="userList" (rowOut)="rowGet($event)"></app-kd-grid>
+

@@ -1,0 +1,20 @@
+<p>kd-grid works!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let clmn of columnList">
+        {{ clmn }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of getList"
+    (click)="clickRow(item)"
+    >
+      <td *ngFor="let clmn of columnList">
+        {{item[clmn]}}
+      </td>
+    </tr>
+  </tbody>
+</table>
